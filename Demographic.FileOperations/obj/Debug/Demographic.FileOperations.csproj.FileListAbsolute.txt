@@ -1,0 +1,6 @@
+C:\Users\vdv30\source\repos\Demographic\Demographic.FileOperations\obj\Debug\Demographic.FileOperations.csproj.AssemblyReference.cache
+C:\Users\vdv30\source\repos\Demographic\Demographic.FileOperations\obj\Debug\Demographic.FileOperations.csproj.CoreCompileInputs.cache
+C:\Users\vdv30\source\repos\Demographic\Demographic.FileOperations\bin\Debug\Demographic.FileOperations.dll
+C:\Users\vdv30\source\repos\Demographic\Demographic.FileOperations\bin\Debug\Demographic.FileOperations.pdb
+C:\Users\vdv30\source\repos\Demographic\Demographic.FileOperations\obj\Debug\Demographic.FileOperations.dll
+C:\Users\vdv30\source\repos\Demographic\Demographic.FileOperations\obj\Debug\Demographic.FileOperations.pdb

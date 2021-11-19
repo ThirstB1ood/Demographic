@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C9BB8FC-36F2-4659-A9F9-7F2132A2DD8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demographic</RootNamespace>
+    <AssemblyName>Demographic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics, Version=4.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.15.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alive.cs" />
+    <Compile Include="Distribution.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Female.cs" />
+    <Compile Include="IEngine.cs" />
+    <Compile Include="Male.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Demographic.FileOperations.FileReader.datasource" />
+    <None Include="Properties\DataSources\Demographic.FileOperations.FilesData.datasource" />
+    <None Include="Properties\DataSources\Engine.datasource" />
+    <None Include="Properties\DataSources\Engine.Year.datasource" />
+    <None Include="Properties\DataSources\Female.datasource" />
+    <None Include="Properties\DataSources\IEngine.datasource" />
+    <None Include="Properties\DataSources\Male.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.AppSwitches.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Combinatorics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Complex32.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.ComplexExtensions.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Constants.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.ContourIntegrate.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Control.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Differentiate.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Differentiation.FiniteDifferenceCoefficients.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Differentiation.NumericalDerivative.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Differentiation.NumericalHessian.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Differentiation.NumericalJacobian.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.DifferIntegrate.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distance.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Bernoulli.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Beta.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.BetaBinomial.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.BetaScaled.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Binomial.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Burr.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Categorical.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Cauchy.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Chi.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.ChiSquared.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.ContinuousUniform.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.ConwayMaxwellPoisson.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Dirichlet.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.DiscreteUniform.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Erlang.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Exponential.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.FisherSnedecor.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Gamma.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Geometric.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Hypergeometric.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.IContinuousDistribution.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.IDiscreteDistribution.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.IDistribution.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.InverseGamma.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.InverseGaussian.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.InverseWishart.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.IUnivariateDistribution.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Laplace.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.LogNormal.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.MatrixNormal.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.MeanPrecisionPair.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Multinomial.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.NegativeBinomial.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Normal.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.NormalGamma.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Pareto.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Poisson.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Rayleigh.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.SkewedGeneralizedError.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.SkewedGeneralizedT.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Stable.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.StudentT.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Triangular.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.TruncatedPareto.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Weibull.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Wishart.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Distributions.Zipf.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Euclid.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Evaluate.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.ExcelFunctions.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Financial.AbsoluteReturnMeasures.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Financial.AbsoluteRiskMeasures.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.FindMinimum.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.FindRoots.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Fit.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Generate.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.GoodnessOfFit.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.IntegralTransforms.Fourier.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.IntegralTransforms.Hartley.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Integrate.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Integration.DoubleExponentialTransformation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Integration.GaussKronrodRule.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Integration.GaussLegendreRule.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Integration.NewtonCotesTrapeziumRule.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Integration.SimpsonRule.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolate.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.Barycentric.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.BulirschStoerRationalInterpolation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.CubicSpline.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.IInterpolation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.LinearSpline.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.LogLinear.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.NevillePolynomialInterpolation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.QuadraticSpline.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.StepInterpolation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Interpolation.TransformedInterpolation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.InvalidParameterException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.DenseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.DenseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.DiagonalMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Matrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.BiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.CompositeSolver.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.DiagonalPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.GpBiCg.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.ILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.ILUTPPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.MILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.MlkBiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Solvers.TFQMR.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.SparseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.SparseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex.Vector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.DenseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.DenseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.DiagonalMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Matrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.BiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.CompositeSolver.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.DiagonalPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.GpBiCg.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.ILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.ILUTPPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.MILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.MlkBiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Solvers.TFQMR.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.SparseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.SparseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Complex32.Vector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.CreateMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.CreateVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.DenseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.DenseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.DiagonalMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Matrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.BiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.CompositeSolver.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.DiagonalPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.GpBiCg.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.ILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.ILUTPPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.MILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.MlkBiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Solvers.TFQMR.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.SparseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.SparseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Double.Vector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.MatrixExtensions.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.DenseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.DenseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.DiagonalMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Matrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.BiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.CompositeSolver.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.DiagonalPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.GpBiCg.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.ILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.ILUTPPreconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.MILU0Preconditioner.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.MlkBiCgStab.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Solvers.TFQMR.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.SparseMatrix.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.SparseVector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.Single.Vector.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearAlgebra.VectorExtensions.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearRegression.MultipleRegression.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearRegression.SimpleRegression.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.LinearRegression.WeightedRegression.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.MemoryAllocationException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.NativeInterfaceException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.NonConvergenceException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.NumericalBreakdownException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.OdeSolvers.AdamsBashforth.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.OdeSolvers.RungeKutta.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.BfgsBMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.BfgsMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.BfgsMinimizerBase.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.BfgsSolver.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.ConjugateGradientMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.EvaluationException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.GoldenSectionMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IncompatibleObjectiveException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.InnerOptimizationException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IObjectiveFunction.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IObjectiveFunctionEvaluation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IObjectiveModel.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IObjectiveModelEvaluation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IScalarObjectiveFunction.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IScalarObjectiveFunctionEvaluation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.IUnconstrainedMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.LevenbergMarquardtMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.LimitedMemoryBfgsMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.LineSearch.LineSearchResult.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.LineSearch.StrongWolfeLineSearch.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.LineSearch.WeakWolfeLineSearch.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.LineSearch.WolfeLineSearch.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.MaximumIterationsException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.MinimizationResult.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.MinimizationWithLineSearchResult.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.MinimizerBase.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.NelderMeadSimplex.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.NewtonMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.NonlinearMinimizationResult.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.NonlinearMinimizerBase.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.ObjectiveFunction.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.ObjectiveFunctions.ForwardDifferenceGradientObjectiveFunction.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.ObjectiveFunctions.LazyObjectiveFunctionBase.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.ObjectiveFunctions.ObjectiveFunctionBase.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.OptimizationException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.QuadraticGradientProjectionSearch+GradientProjectionResult.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.QuadraticGradientProjectionSearch.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.ScalarMinimizationResult.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.TrustRegion.ITrustRegionSubproblem.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.TrustRegion.TrustRegionDogLegMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.TrustRegion.TrustRegionMinimizerBase.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.TrustRegion.TrustRegionNewtonCGMinimizer.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Optimization.TrustRegion.TrustRegionSubproblem.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Permutation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Polynomial.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Precision.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.Common.Cuda.CudaProvider.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.Common.Mkl.MklProvider.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.Common.OpenBlas.OpenBlasProvider.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.FourierTransform.FourierTransformControl.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.FourierTransform.IFourierTransformProvider.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.LinearAlgebra.ILinearAlgebraProvider.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.LinearAlgebra.LinearAlgebraControl.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.SparseSolver.ISparseSolverProvider.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Providers.SparseSolver.SparseSolverControl.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.CryptoRandomSource.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.Mcg31m1.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.Mcg59.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.MersenneTwister.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.Mrg32k3a.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.Palf.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.RandomExtensions.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.RandomSeed.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.RandomSource.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.SystemRandomSource.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.WH1982.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.WH2006.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.Xorshift.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Random.Xoshiro256StarStar.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.Bisection.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.Brent.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.Broyden.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.Cubic.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.NewtonRaphson.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.RobustNewtonRaphson.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.Secant.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.RootFinding.ZeroCrossingBracketing.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.SingularUMatrixException.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Sorting.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.SpecialFunctions.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.ArrayStatistics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Bucket.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Correlation.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.DescriptiveStatistics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Histogram.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.KernelDensity.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Mcmc.HybridMC.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Mcmc.MCMCDiagnostics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Mcmc.UnivariateHybridMC.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Mcmc.UnivariateSliceSampler.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.MovingStatistics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.RunningStatistics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.SortedArrayStatistics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.Statistics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Statistics.StreamingStatistics.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.TestFunctions.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Trig.datasource" />
+    <None Include="Properties\DataSources\MathNet.Numerics.Window.datasource" />
+    <None Include="Properties\DataSources\Person.ChildBirth.datasource" />
+    <None Include="Properties\DataSources\Person.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Demographic.FileOperations\Demographic.FileOperations.csproj">
+      <Project>{beb1e7a8-9aa0-460e-89c2-a62399c8d27c}</Project>
+      <Name>Demographic.FileOperations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

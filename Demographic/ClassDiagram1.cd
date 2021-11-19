@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Demographic.Distribution">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAACAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Distribution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Demographic.Male">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Male.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Demographic.Female">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Demographic.Female.ChildBirth" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Female.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAEAAABAAA=</HashCode>
+      <FileName>Female.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Demographic.Person">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAEAIAABAAAAEEgQAQAAAAAAAEAQQAABAAAAAI=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Demographic.Engine">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Demographic.Engine.Year" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Engine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Demographic.Engine.YearToo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Engine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABABAAAAQACAAASIAAAAAQAIAAACQEDEAIEAAAAAAAA=</HashCode>
+      <FileName>Engine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Demographic.IEngine">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAASIAAAAAAAAAAAAAEAAAIAAAAAAAAA=</HashCode>
+      <FileName>IEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Demographic.Event">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAACAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Event.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Demographic.Alive">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Alive.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

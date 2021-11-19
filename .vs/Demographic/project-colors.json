@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4c9bb8fc-36f2-4659-a9f9-7f2132a2dd8c": {
+      "ProjectGuid": "4c9bb8fc-36f2-4659-a9f9-7f2132a2dd8c",
+      "DisplayName": "Demographic",
+      "ColorIndex": 0
+    },
+    "beb1e7a8-9aa0-460e-89c2-a62399c8d27c": {
+      "ProjectGuid": "beb1e7a8-9aa0-460e-89c2-a62399c8d27c",
+      "DisplayName": "Demographic.FileOperations",
+      "ColorIndex": 1
+    },
+    "f1a6bf36-8a00-4eef-9386-2e7ab7ce2080": {
+      "ProjectGuid": "f1a6bf36-8a00-4eef-9386-2e7ab7ce2080",
+      "DisplayName": "Demographic.WinForms",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "3768ef0f-06c5-4d48-a209-1d0c12ba13ae": {
+      "ProjectGuid": "3768ef0f-06c5-4d48-a209-1d0c12ba13ae",
+      "DisplayName": "FilesData",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

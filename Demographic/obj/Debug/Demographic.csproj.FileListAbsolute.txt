@@ -1,0 +1,11 @@
+C:\Users\vdv30\source\repos\Demographic\Demographic\bin\Debug\Demographic.dll
+C:\Users\vdv30\source\repos\Demographic\Demographic\bin\Debug\Demographic.pdb
+C:\Users\vdv30\source\repos\Demographic\Demographic\bin\Debug\MathNet.Numerics.dll
+C:\Users\vdv30\source\repos\Demographic\Demographic\bin\Debug\MathNet.Numerics.xml
+C:\Users\vdv30\source\repos\Demographic\Demographic\obj\Debug\Demographic.csproj.AssemblyReference.cache
+C:\Users\vdv30\source\repos\Demographic\Demographic\obj\Debug\Demographic.csproj.CoreCompileInputs.cache
+C:\Users\vdv30\source\repos\Demographic\Demographic\obj\Debug\Demographic.csproj.CopyComplete
+C:\Users\vdv30\source\repos\Demographic\Demographic\obj\Debug\Demographic.dll
+C:\Users\vdv30\source\repos\Demographic\Demographic\obj\Debug\Demographic.pdb
+C:\Users\vdv30\source\repos\Demographic\Demographic\bin\Debug\Demographic.FileOperations.dll
+C:\Users\vdv30\source\repos\Demographic\Demographic\bin\Debug\Demographic.FileOperations.pdb
